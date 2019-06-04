@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #181818;
+  font-family: 'Roboto', sans-serif;
+}
+:root,
+.purple {
+  --editor-header: #660066;
+  --editor-body: #e600e6;
+}
+.yellow {
+  --editor-header: #e6e600;
+  --editor-body: #ffff80;
+}
+.green {
+  --editor-header: #004d00;
+  --editor-body: #4dff4d;
+}
+.title {
+  color: var(--editor-header);
+  font-size: 3em;
+  margin: 2rem;
+  display: block;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  text-decoration: none;
+}
+/* Text Editor */
+.text-editor-area {
+  width: 40%;
+  margin: 4rem auto 0;
+  background-color: var(--editor-header);
+}
+.tool-box {
+  padding: 20px 10px;
+}
+.text-editor-form {
+  width: 100%;
+  background-color: var(--editor-body);
+  color: #fff;
+}
+.text-editor {
+  resize: none;
+  padding: 10px;
+  min-height: 250px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+.save-counter {
+  display: flex;
+  justify-content: space-between;
+}
+.counter-text {
+  color: #000;
+  margin-left: 4px;
+}
+.btn-save {
+  padding: 10px;
+  background-color: var(--editor-header);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tool-box > span {
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 2px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+/* Themes */
+#purple-theme {
+  background-color: #660066;
+  margin-left: 30px;
+}
+#yellow-theme {
+  background-color: #e6e600;
+}
+#green-theme {
+  background-color: #004d00;
+}
+/* Notes Section */
+.notes {
+  width: 40%;
+  margin: 2rem auto;
+}
+.notes h1 {
+  color: var(--editor-header);
+}
+.notes-container {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: #fff;
+  border-bottom: 3px dashed var(--editor-header);
+  margin: 1rem 0;
+}
+.view-more {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.view-more:hover {
+  text-decoration: underline;
+}
+.note-actions {
+  text-align: right;
+}
+.note-actions > a {
+  margin: 0 5px;
+  color: var(--editor-header);
+  text-decoration: none;
+  cursor: pointer;
+}
+.note-actions > a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.note-date {
+  color: var(--editor-header);
+  font-size: 0.8em;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 6rem;
+  font-size: 1.3em;
+  background-color: #0d0d0d;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+footer a {
+  color: var(--editor-header);
+  font-weight: bold;
+  font-family: 'ZCOOL KuaiLe', 'Roboto', cursive;
+}
+.title:hover,
+footer a:hover {
+  color: var(--editor-body);
+}
+@media screen and (max-width: 768px) {
+  .text-editor-area,
+  .notes {
+    width: 80%;
+  }
+}
